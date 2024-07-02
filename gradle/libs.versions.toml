@@ -1,0 +1,76 @@
+[versions]
+agp = "8.5.0"
+kotlin = "1.9.24"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.8.2"
+activityCompose = "1.9.0"
+composeBom = "2024.06.00"
+retrofit-moshi = "2.11.0"
+moshiKotlin= "1.14.0"
+moshiAdapter= "1.12.0"
+coil-version = "2.6.0"
+okhttp-interceptor-version = "4.12.0"
+hilt-version = "2.49"
+hilt-navigation-version = "1.2.0"
+ksp-version = "1.9.10-1.0.13"
+material-version = "1.2.1"
+coroutine-test = "1.8.1"
+appcompat = "1.7.0"
+mockito = "5.12.0"
+mockito-kotlin = "5.3.1"
+mockito-inline= "2.13.0"
+mockk-version = "1.13.11"
+room-version = "2.6.1"
+datastore-version = "1.1.1"
+animationCoreAndroid = "1.6.8"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material3 = { group = "androidx.compose.material3", name = "material3", version.ref="material-version" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit-moshi" }
+moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit-moshi" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiKotlin" }
+moshi-adapter = { group = "com.squareup.moshi", name = "moshi-adapter", version.ref = "moshiAdapter" }
+okhttpInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp-interceptor-version" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil-version" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-version" }
+hiltKsp = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-version" }
+hiltNavigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-version" }
+#material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+coroutineTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutine-test" }
+mockk = {group = "io.mockk", name= "mockk", version.ref="mockk-version"}
+mockitoCore = {group="org.mockito", name= "mockito-core", version.ref="mockito"}
+mockitoKotlin = {group="org.mockito.kotlin", name= "mockito-kotlin", version.ref="mockito-kotlin"}
+#mockitoInline = {group ="org.mockito:mockito", name ="inline", version.ref="mockito-inline" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+room-runtime = {group="androidx.room", name="room-runtime", version.ref="room-version"}
+room-ktx = {group="androidx.room", name="room-ktx", version.ref="room-version"}
+room-compiler = {group="androidx.room", name="room-compiler", version.ref="room-version"}
+data-store={group="androidx.datastore", name="datastore-preferences", version.ref="datastore-version"}
+androidx-animation-core-android = { group = "androidx.compose.animation", name = "animation-core-android", version.ref = "animationCoreAndroid" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#compose-compiler = {id = "org.jetbrains.kotlin.plugin.compose", version.ref ="kotlin"}
+
+hiltPlugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
